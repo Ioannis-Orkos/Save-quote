@@ -13,9 +13,7 @@ class AddQuote(
         if(quote.by.isBlank()) {
             throw InvalidNoteException("The owner of the quote can't be empty.")
         }
-        if(quote.source.isBlank()) {
-            throw InvalidNoteException("The source of the quote can't be empty.")
-        }
+
         if(quote.content.isBlank()) {
             throw InvalidNoteException("The content of the quote can't be empty.")
         }

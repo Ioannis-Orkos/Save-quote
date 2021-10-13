@@ -9,8 +9,8 @@ import com.ioannisorkos.savequote.ui.theme.*
 data class Quote(
     val content:String,
     val by:String,
-    val source:String,
-    val timestamp:String,
+    val source:String?=null,
+    val timestamp: Long,
     val color:Int,
     @PrimaryKey val id: Int? = null
 ) {

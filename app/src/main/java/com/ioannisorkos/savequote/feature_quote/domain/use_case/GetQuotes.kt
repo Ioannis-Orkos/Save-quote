@@ -21,7 +21,6 @@ class GetQuotes(
                         is QuoteOrder.By -> notes.sortedBy { it.by.lowercase() }
                         is QuoteOrder.Date -> notes.sortedBy { it.timestamp }
                         is QuoteOrder.Color -> notes.sortedBy { it.color }
-                        is QuoteOrder.Source -> notes.sortedBy { it.source }
                     }
                 }
                 is OrderType.Descending -> {
@@ -29,7 +28,6 @@ class GetQuotes(
                         is QuoteOrder.By -> notes.sortedByDescending { it.by.lowercase() }
                         is QuoteOrder.Date -> notes.sortedByDescending { it.timestamp }
                         is QuoteOrder.Color -> notes.sortedByDescending { it.color }
-                        is QuoteOrder.Source -> notes.sortedBy { it.source }
                     }
                 }
             }

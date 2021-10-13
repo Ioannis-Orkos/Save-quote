@@ -31,15 +31,15 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun SaveQuoteTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
+fun SaveQuoteTheme(darkTheme: Boolean = true, content: @Composable() () -> Unit) {
 //    val colors = if (darkTheme) {
 //        DarkColorPalette
 //    } else {
 //        LightColorPalette
 //    }
+//        colors = color,
 
     MaterialTheme(
-//        colors = color,
         colors = DarkColorPalette,
         typography = Typography,
         shapes = Shapes,
